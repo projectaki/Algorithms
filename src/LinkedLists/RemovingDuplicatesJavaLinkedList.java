@@ -5,12 +5,15 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-// Removing duplicates from unordered linked list
-public class RemovingDuplicates<T> {
+/**
+ * Class for removing duplicates using Java s Linked list
+ * @param <T>
+ */
+public class RemovingDuplicatesJavaLinkedList<T> {
     private LinkedList<T> unorderedList;
     HashMap<T,Integer> tracker;
 
-    public RemovingDuplicates() {
+    public RemovingDuplicatesJavaLinkedList() {
         unorderedList = new LinkedList<>();
         tracker = new HashMap<>();
     }
@@ -25,20 +28,9 @@ public class RemovingDuplicates<T> {
         }
     }
 
-    public void removeDupsWithoutBuffer(LinkedList<T> list) {
-        Iterator<T> iter = list.iterator();
-        int countDown = list.size();
-        while (iter.hasNext()) {
-            T temp = iter.next();
-            for (int i = (list.size()-countDown); i < list.size() ;i++ ) {
-                if (temp.equals(list.get(i))) iter.remove();
-            }
-            countDown--;
-        }
-    }
 
     public static void main(String[] args) {
-        RemovingDuplicates<String> r = new RemovingDuplicates<>();
+        RemovingDuplicatesJavaLinkedList<String> r = new RemovingDuplicatesJavaLinkedList<>();
         LinkedList<String> unorderedList = new LinkedList<>();
         HashSet<String> tracker = new HashSet<>();
         unorderedList.add("a");
