@@ -93,27 +93,33 @@ public class LinkedListMethods<T> extends LinkedList<T>{
         }
     }
 
-   public static LinkedList<Integer> sumOf2Numbers(LinkedList<Integer> list1, LinkedList<Integer> list2) {
-       int list1CurrentVal;
-       int list2CurrentVal;
-       int carriedOver = 0;
-       LinkedList<Integer> sumList = new LinkedList<>();
-       LinkedList<Integer>.Node i = list1.head;
-       LinkedList<Integer>.Node j = list2.head;
-       while(i != null | j != null) {
-           if (i == null) list1CurrentVal = 0;
-           else list1CurrentVal = i.data;
-           if (j == null) list2CurrentVal = 0;
-           else list2CurrentVal = j.data;
-           int currentSum = carriedOver + list1CurrentVal + list2CurrentVal;
-           sumList.addToTail((currentSum)%10);
-           carriedOver = currentSum/10;
-           if (i != null) i = i.next;
-           if (j != null) j = j.next;
-       }
-       if (carriedOver != 0) sumList.addToTail(carriedOver);
-       return  sumList;
-   }
+    /**
+     * Sum of to integers represented as linked lists in reverse order
+     * @param list1 Integer1 represented as a linked list in reverse order
+     * @param list2 Integer2 represented as a linked list in reverse order
+     * @return Returns the sum of the 2 linked lists represented as a linked list in reverse order
+     */
+    public static LinkedList<Integer> sumOf2Numbers(LinkedList<Integer> list1, LinkedList<Integer> list2) {
+        int list1CurrentVal;
+        int list2CurrentVal;
+        int carriedOver = 0;
+        LinkedList<Integer> sumList = new LinkedList<>();
+        LinkedList<Integer>.Node i = list1.head;
+        LinkedList<Integer>.Node j = list2.head;
+        while(i != null | j != null) {
+            if (i == null) list1CurrentVal = 0;
+            else list1CurrentVal = i.data;
+            if (j == null) list2CurrentVal = 0;
+            else list2CurrentVal = j.data;
+            int currentSum = carriedOver + list1CurrentVal + list2CurrentVal;
+            sumList.addToTail((currentSum)%10);
+            carriedOver = currentSum/10;
+            if (i != null) i = i.next;
+            if (j != null) j = j.next;
+        }
+        if (carriedOver != 0) sumList.addToTail(carriedOver);
+        return  sumList;
+    }
 
     public static void main(String[] args) {
         LinkedList<Integer> list1 = new LinkedListMethods<>();
