@@ -1,6 +1,5 @@
 package LinkedLists;
 
-import sun.awt.image.ImageWatched;
 
 import java.util.HashSet;
 import java.util.NoSuchElementException;
@@ -94,18 +93,44 @@ public class LinkedListMethods<T> extends LinkedList<T>{
         }
     }
 
-   
+   public static LinkedList<Integer> sumOf2Numbers(LinkedList<Integer> list1, LinkedList<Integer> list2) {
+       int list1CurrentVal;
+       int list2CurrentVal;
+       int carriedOver = 0;
+       LinkedList<Integer> sumList = new LinkedList<>();
+       LinkedList<Integer>.Node i = list1.head;
+       LinkedList<Integer>.Node j = list2.head;
+       while(i != null | j != null) {
+           if (i == null) list1CurrentVal = 0;
+           else list1CurrentVal = i.data;
+           if (j == null) list2CurrentVal = 0;
+           else list2CurrentVal = j.data;
+           int currentSum = carriedOver + list1CurrentVal + list2CurrentVal;
+           sumList.addToTail((currentSum)%10);
+           carriedOver = currentSum/10;
+           if (i != null) i = i.next;
+           if (j != null) j = j.next;
+       }
+       if (carriedOver != 0) sumList.addToTail(carriedOver);
+       return  sumList;
+   }
 
     public static void main(String[] args) {
-        LinkedListMethods<Integer> list = new LinkedListMethods<>();
-        list.addToTail(3);
-        list.addToTail(5);
-        list.addToTail(8);
-        list.addToTail(5);
-        list.addToTail(10);
-        list.addToTail(2);
-        list.partitionLinkedList(5);
-        list.printList();
+        LinkedList<Integer> list1 = new LinkedListMethods<>();
+        LinkedList<Integer> list2 = new LinkedListMethods<>();
+        list1.addToTail(9);
+        list1.addToTail(7);
+        list1.addToTail(8);
+        list2.addToTail(6);
+        list2.addToTail(8);
+        list2.addToTail(5);
+
+
+
+        list1.printList();
+        list2.printList();
+        LinkedList<Integer> sumList = sumOf2Numbers(list1,list2);
+        sumList.printList();
 
 
 
