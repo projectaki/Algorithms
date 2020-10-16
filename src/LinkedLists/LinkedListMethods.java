@@ -1,5 +1,7 @@
 package LinkedLists;
 
+import sun.awt.image.ImageWatched;
+
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 
@@ -11,7 +13,7 @@ public class LinkedListMethods<T> extends LinkedList<T>{
 
     /**
      * Finds the element : k before the end
-     * @param k
+     * @param k the kth element before the end
      * @return <T>
      */
     public T findKthToLastElement(int k) {
@@ -57,29 +59,55 @@ public class LinkedListMethods<T> extends LinkedList<T>{
             i = i.next;
         }
     }
+/*
+    private Node testAccessNode(T test) {
+        Node loop = head;
+        while (loop.next.data != test) {
+            loop = loop.next;
+        }
+        return loop.next;
+    }
+*/
+
+    /**
+     * Removes given Node
+     * @param x x is the Node we are given access to
+     */
+    public void removeNode(Node x) {
+        Node temp = x.next;
+        x.data = temp.data;
+        x.next = temp.next;
+    }
+
+    /**
+     * Partitions list based on the given value
+     * @param val The partition value
+     */
+    public void partitionLinkedList(int val) {
+        for (Node x = head; x != null; x = x.next) {
+            if ((int)x.next.data < val) {
+                Node temp = x.next;
+                x.next = x.next.next;
+                temp.next = head;
+                head = temp;
+            }
+        }
+    }
+
+   
 
     public static void main(String[] args) {
-        LinkedListMethods<String> list = new LinkedListMethods<>();
-        list.addToTail("a");
-        list.addToTail("a");
-        list.addToTail("b");
-        list.addToTail("c");
-        list.addToTail("c");
-        list.addToTail("c");
-        list.addToTail("d");
-        list.addToTail("e");
-        list.addToTail("f");
-        list.addToTail("c");
-        list.addToTail("f");
-        list.addToTail("a");
-        list.addToTail("j");
-        list.addToTail("a");
-        list.addToTail("b");
-        list.addToTail("b");
-        list.addToTail("b");
+        LinkedListMethods<Integer> list = new LinkedListMethods<>();
+        list.addToTail(3);
+        list.addToTail(5);
+        list.addToTail(8);
+        list.addToTail(5);
+        list.addToTail(10);
+        list.addToTail(2);
+        list.partitionLinkedList(5);
         list.printList();
-        list.removeDuplicatesNoBuffer();
-        list.printList();
+
+
 
     }
 

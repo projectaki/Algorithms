@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
 public class LinkedList<T> implements Iterable<T>{
 
     protected Node head;
-    private Node tail;
+    protected Node tail;
 
     /**
      *  inner class node for linked list nodes
@@ -35,13 +35,14 @@ public class LinkedList<T> implements Iterable<T>{
 
     /**
      * Adds the @param to the end of the list
-     * @param data
+     * @param data Generic data to add to list
+     *
      */
     public void addToTail(T data) {
         Node x = new Node(data);
         if (head == null) {
             head = tail = x;
-            return;
+            return ;
         }
         tail.next = x;
         tail = x;
