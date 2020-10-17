@@ -75,7 +75,7 @@ public class LinkedListMethods2<T> extends LinkedList<T> {
 
 
     public static void main(String[] args) {
-        
+
 
 
     }
