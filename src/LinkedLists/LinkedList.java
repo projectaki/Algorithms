@@ -11,6 +11,7 @@ public class LinkedList<T> implements Iterable<T>{
 
     protected Node head;
     protected Node tail;
+    private int size = 0;
 
     /**
      *  inner class node for linked list nodes
@@ -19,15 +20,15 @@ public class LinkedList<T> implements Iterable<T>{
         protected T data;
         protected Node next;
 
-        public Node() {
+        protected Node() {
 
         }
 
-        public Node(T data) {
+        protected Node(T data) {
             this.data = data;
         }
 
-        public Node(T data, Node next) {
+        protected Node(T data, Node next) {
             this.data = data;
             this.next = next;
         }
@@ -40,20 +41,42 @@ public class LinkedList<T> implements Iterable<T>{
      */
     public void addToTail(T data) {
         Node x = new Node(data);
+        size++;
         if (head == null) {
             head = tail = x;
-            return ;
+            return;
         }
         tail.next = x;
         tail = x;
     }
 
     /**
+     * Adds the @param to the end of the list
+     * @param data Adds the Node to the tail of the list, if Node has following pointers, they are also added
+     */
+    public void addToTail(Node data) {
+
+        while (data != null) {
+            size++;
+            if (head == null) {
+                head = tail = data;
+            }
+            else {
+                tail.next = data;
+                tail = data;
+            }
+            data = data.next;
+        }
+
+    }
+
+    /**
      * Adds the @param to then head of the list
-     * @param data
+     * @param data Data to add to head
      */
     public void addToHead(T data) {
         Node x = new Node(data);
+        size++;
         if (head == null) {
             head = tail = x;
             return;
@@ -71,9 +94,17 @@ public class LinkedList<T> implements Iterable<T>{
         Node x = head;
         head = x.next;
         x.next = null;
+        size--;
         return x.data;
     }
 
+    /**
+     * Size of linked list
+     * @return Returns the size of the linked list
+     */
+    public int size() {
+        return size;
+    }
     /**
      * Returns an iterator for the linked list
      * @return Iterator<T>
@@ -107,6 +138,15 @@ public class LinkedList<T> implements Iterable<T>{
         }
         System.out.print("]");
         System.out.println();
+    }
+
+    /**
+     * Creates a Node with specified Data
+     * @param data Generic data
+     * @return Returns new Node
+     */
+    public Node createNode(T data) {
+        return new Node(data);
     }
 
     public static void main(String[] args) {

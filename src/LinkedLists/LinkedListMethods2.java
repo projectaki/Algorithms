@@ -45,19 +45,37 @@ public class LinkedListMethods2<T> extends LinkedList<T> {
 
     }
 
+    /**
+     * Gets the intersection of this Linked list with another linked list
+     * @param list2 The comparing linked list
+     * @return Returns the Node if there is an intersection, otherwise returns null
+     */
+    public Node getIntersection(LinkedList<T> list2) {
+        // There is an intersection
+        LinkedList<T> list1 = this;
+        if (list1.tail == list2.tail) {
+            LinkedList<T> longer = list1.size() > list2.size() ? list1 : list2;
+            LinkedList<T> shorter = list1 != longer ? list1 : list2;
+            int diff = longer.size()-shorter.size();
+            Node longNode = longer.head;
+            Node shortNode = shorter.head;
+            while (longNode != null) {
+                if (--diff < 0) {
+                    if (longNode == shortNode) return longNode;
+                    else {
+                        longNode = longNode.next;
+                        shortNode = shortNode.next;
+                    }
+                }
+                else longNode = longNode.next;
+            }
+        }
+        return null;
+    }
+
+
     public static void main(String[] args) {
-        LinkedListMethods2<String> list1 = new LinkedListMethods2<>();
-        list1.addToTail("a");
-        list1.addToTail("a");
-        list1.addToTail("b");
-        list1.addToTail("b");
-        list1.addToTail("b");
-        list1.addToTail("a");
-        list1.addToTail("a");
-        list1.printList();
-        System.out.println(list1.isLinkedListPalindrome());
-
-
+        
 
 
     }
