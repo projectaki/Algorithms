@@ -73,17 +73,35 @@ public class LinkedListMethods2<T> extends LinkedList<T> {
         return null;
     }
 
+    /**
+     * Finds the beginning of the loop if a loop exists
+     *
+     * @return Returns the Node which is at teh beginning of the loop
+     */
+    public Node findLoopBeginning() {
+        Node fast = this.head;
+        Node slow = this.head;
+        do {
+            // this means there is no loop, the linked list has an end
+            if(fast == null || fast.next == null) return null;
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        // do while the pointer meet
+        while (fast != slow);
+        // set one of the pointers to the beginning
+        slow = this.head;
+        // iterate pointers until they meet, when they meet they will be at the beginning of the loop, as they are both -
+        // x distance from the beginning of the loop
+        while(fast != slow) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        return slow;
+    }
 
     public static void main(String[] args) {
 
-
-
     }
-
-
-
-
-
-
 
 }
