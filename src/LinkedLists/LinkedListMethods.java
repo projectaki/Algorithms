@@ -1,6 +1,7 @@
 package LinkedLists;
 
 
+import javax.naming.LinkLoopException;
 import java.util.HashSet;
 import java.util.NoSuchElementException;
 
@@ -121,6 +122,7 @@ public class LinkedListMethods<T> extends LinkedList<T>{
         return  sumList;
     }
 
+
     public static void main(String[] args) {
         LinkedList<Integer> list1 = new LinkedListMethods<>();
         LinkedList<Integer> list2 = new LinkedListMethods<>();
@@ -130,13 +132,6 @@ public class LinkedListMethods<T> extends LinkedList<T>{
         list2.addToTail(6);
         list2.addToTail(8);
         list2.addToTail(5);
-
-
-
-        list1.printList();
-        list2.printList();
-        LinkedList<Integer> sumList = sumOf2Numbers(list1,list2);
-        sumList.printList();
 
 
 
