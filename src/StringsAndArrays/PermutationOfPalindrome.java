@@ -23,12 +23,22 @@ public class PermutationOfPalindrome {
         return numberOfOddCount <= 1;
     }
 
+    public static boolean isPermutationPalindrome(String str) {
+
+        int bitarray = 0;
+        for (int i = 0; i < str.length(); i++) {
+            int val = Character.getNumericValue(str.charAt(i) - 10);
+            bitarray ^= (1 << val);
+        }
+        return (bitarray & (bitarray - 1)) == 0;
+    }
 
 
     public static void main(String[] args) {
-        String a = "ababcfdfdc";
+        String a = "ab";
         PermutationOfPalindrome p = new PermutationOfPalindrome(a);
         System.out.println(p.isPermutation());
+        System.out.println(isPermutationPalindrome(a));
 
     }
 

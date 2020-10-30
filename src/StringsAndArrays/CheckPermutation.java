@@ -23,6 +23,7 @@ public class CheckPermutation {
         return true;
     }
 
+
     public static void main(String[] args) {
         String a = "dcba";
         String b = "abcd";
