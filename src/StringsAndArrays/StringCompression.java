@@ -5,7 +5,11 @@ package StringsAndArrays;
  */
 public class StringCompression {
 
-
+    /**
+     * Compress String
+     * @param str Input String
+     * @return returns compressed string
+     */
     public static String compress(String str) {
         StringBuilder sb = new StringBuilder();
         int counter = 0;
@@ -23,6 +27,11 @@ public class StringCompression {
         return sb.toString();
     }
 
+    /**
+     * Returns the amount of character changes
+     * @param str Input string
+     * @return Returns the number of character changes in the Input String
+     */
     public static int charChanges(String str) {
         int counter = 1;
         for (int i = 0; i < str.length() - 1; i++) {
@@ -33,6 +42,11 @@ public class StringCompression {
         return counter;
     }
 
+    /**
+     * Returns the better string
+     * @param str Input String
+     * @return Returns the Input string if its shorter than the would be compressed string, otherwise compresses and returns new string
+     */
     public static String run(String str) {
         if (charChanges(str) * 2 > str.length()) return str;
         else return compress(str);

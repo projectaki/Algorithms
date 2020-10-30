@@ -32,7 +32,7 @@
   </component>
   <component name="RunManager" selected="Application.StringsAndArrays.StringCompression">
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -121,7 +121,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -136,17 +136,17 @@
       <item itemvalue="Application.LinkedLists.LinkedListMethods" />
       <item itemvalue="Application.LinkedLists.LinkedList" />
       <item itemvalue="Application.LinkedLists.RemovingDuplicates" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.StringsAndArrays.CheckPermutation" />
+      <item itemvalue="Application.StringsAndArrays.OneAway" />
       <item itemvalue="Application.StringsAndArrays.PermutationOfPalindrome" />
       <item itemvalue="Application.StringsAndArrays.ReplaceSpacesWithCharacters" />
       <item itemvalue="Application.StringsAndArrays.RotateMatrix" />
       <item itemvalue="Application.StringsAndArrays.RotateNxNMatrix90Degree" />
+      <item itemvalue="Application.StringsAndArrays.StringCompression" />
+      <item itemvalue="Application.StringsAndArrays.ZeroMatrix" />
       <item itemvalue="Application.Strings.UniqueCharactersInString" />
       <item itemvalue="Application.UniqueCharactersInString" />
-      <item itemvalue="Application.StringsAndArrays.ZeroMatrix" />
-      <item itemvalue="Application.StringsAndArrays.CheckPermutation" />
-      <item itemvalue="Application.StringsAndArrays.OneAway" />
-      <item itemvalue="Application.StringsAndArrays.StringCompression" />
-      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
