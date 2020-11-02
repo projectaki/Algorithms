@@ -30,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.StringsAndArrays.StringCompression">
+  <component name="RunManager" selected="Application.LinkedLists.RecursionSolutions">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
@@ -51,6 +51,11 @@
     </configuration>
     <configuration name="LinkedLists.LinkedListMethods2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="LinkedLists.LinkedListMethods2" />
+      <module name="Algorithms" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LinkedLists.RecursionSolutions" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="LinkedLists.RecursionSolutions" />
       <module name="Algorithms" />
       <method v="2" />
     </configuration>
@@ -136,7 +141,6 @@
       <item itemvalue="Application.LinkedLists.LinkedListMethods" />
       <item itemvalue="Application.LinkedLists.LinkedList" />
       <item itemvalue="Application.LinkedLists.RemovingDuplicates" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.StringsAndArrays.CheckPermutation" />
       <item itemvalue="Application.StringsAndArrays.OneAway" />
       <item itemvalue="Application.StringsAndArrays.PermutationOfPalindrome" />
@@ -147,6 +151,8 @@
       <item itemvalue="Application.StringsAndArrays.ZeroMatrix" />
       <item itemvalue="Application.Strings.UniqueCharactersInString" />
       <item itemvalue="Application.UniqueCharactersInString" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.LinkedLists.RecursionSolutions" />
     </list>
     <recent_temporary>
       <list>
@@ -159,30 +165,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602682737595" />
-    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1602349822369">
+    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1604316825757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602349822369" />
+    <state x="690" y="267" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604316825757" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602683765668">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1602683765668" />
-    <state width="1921" height="298" key="GridCell.Tab.0.bottom" timestamp="1604065417667">
+    <state width="1921" height="298" key="GridCell.Tab.0.bottom" timestamp="1604325064806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="298" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604065417667" />
-    <state width="1921" height="298" key="GridCell.Tab.0.center" timestamp="1604065417666">
+    <state width="1921" height="298" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604325064806" />
+    <state width="1921" height="298" key="GridCell.Tab.0.center" timestamp="1604325064806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="298" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604065417666" />
-    <state width="1921" height="298" key="GridCell.Tab.0.left" timestamp="1604065417666">
+    <state width="1921" height="298" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604325064806" />
+    <state width="1921" height="298" key="GridCell.Tab.0.left" timestamp="1604325064806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="298" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604065417666" />
-    <state width="1921" height="298" key="GridCell.Tab.0.right" timestamp="1604065417667">
+    <state width="1921" height="298" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604325064806" />
+    <state width="1921" height="298" key="GridCell.Tab.0.right" timestamp="1604325064806">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="298" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604065417667" />
+    <state width="1921" height="298" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604325064806" />
     <state width="1921" height="368" key="GridCell.Tab.1.bottom" timestamp="1604053612105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
