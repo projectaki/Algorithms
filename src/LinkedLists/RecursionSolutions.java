@@ -41,7 +41,7 @@ public class RecursionSolutions<T> extends LinkedList<Integer>{
         return x;
     }
 
-    ///////////////////////////// Sum of lists
+    ///////////////////////////// Sum of lists reverse order
 
     public Node sum(Node one, Node two) {
         return sum(one, two, 0);
@@ -67,21 +67,47 @@ public class RecursionSolutions<T> extends LinkedList<Integer>{
     }
 
 
+    //////////////////////////////// Sum of list normal order (not finished yet)
+
+    private class PassBack {
+        private Node tail = null;
+        private int carriedOver = 0;
+
+    }
+
+    public PassBack sumOf(Node one, Node two) {
+        PassBack obj = new PassBack();
+        return sumOf(one, two, obj);
+    }
+
+    public PassBack sumOf(Node one, Node two, PassBack obj) {
+        if (one == null) return obj;
+
+        PassBack pb = sumOf(one.next, two.next, obj);
+        int sum = (pb.carriedOver + one.data + two.data);
+        int remain = sum  % 10;
+
+        Node prev = new Node();
+        prev.data = remain;
+        prev.next = pb.tail;
+        pb.tail = prev;
+        pb.carriedOver = sum/10;
+        return pb;
+    }
 
 
     public static void main(String[] args) {
         RecursionSolutions<Integer> list1 = new RecursionSolutions<>();
         RecursionSolutions<Integer> list2 = new RecursionSolutions<>();
-        list1.addToTail(6);
-        list1.addToTail(1);
-        list1.addToTail(7);
+        list1.addToTail(2);
+        list1.addToTail(9);
+        list1.addToTail(3);
+        list2.addToTail(1);
         list2.addToTail(2);
-        list2.addToTail(3);
-        list2.addToTail(5);
-        list2.addToTail(9);
+        list2.addToTail(8);
 
 
-        System.out.println(list1.sum(list1.head,list2.head).next.next.next.next.next.data);
+        System.out.println(list1.sumOf(list1.head,list2.head).tail.data);
 
 
 
