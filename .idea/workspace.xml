@@ -30,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataStructures" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.StacksAndQueues.StackOfPlates">
+  <component name="RunManager" selected="Application.StacksAndQueues.QueueWithTwoStacks">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
@@ -74,6 +74,11 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="StacksAndQueues.QueueWithTwoStacks" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="StacksAndQueues.QueueWithTwoStacks" />
+      <module name="Algorithms" />
+      <method v="2" />
     </configuration>
     <configuration name="StacksAndQueues.StackMin" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="StacksAndQueues.StackMin" />
@@ -152,9 +157,7 @@
       <item itemvalue="Application.LinkedLists.LinkedList" />
       <item itemvalue="Application.LinkedLists.RecursionSolutions" />
       <item itemvalue="Application.LinkedLists.RemovingDuplicates" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.StacksAndQueues.StackMin" />
-      <item itemvalue="Application.StacksAndQueues.StackOfPlates" />
       <item itemvalue="Application.StringsAndArrays.CheckPermutation" />
       <item itemvalue="Application.StringsAndArrays.OneAway" />
       <item itemvalue="Application.StringsAndArrays.PermutationOfPalindrome" />
@@ -165,6 +168,9 @@
       <item itemvalue="Application.StringsAndArrays.ZeroMatrix" />
       <item itemvalue="Application.Strings.UniqueCharactersInString" />
       <item itemvalue="Application.UniqueCharactersInString" />
+      <item itemvalue="Application.StacksAndQueues.StackOfPlates" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.StacksAndQueues.QueueWithTwoStacks" />
     </list>
     <recent_temporary>
       <list>
@@ -185,22 +191,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604932839131" />
-    <state width="1921" height="280" key="GridCell.Tab.0.bottom" timestamp="1604937058914">
+    <state width="1921" height="280" key="GridCell.Tab.0.bottom" timestamp="1604941042075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604937058914" />
-    <state width="1921" height="280" key="GridCell.Tab.0.center" timestamp="1604937058898">
+    <state width="1921" height="280" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604941042075" />
+    <state width="1921" height="280" key="GridCell.Tab.0.center" timestamp="1604941042075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604937058898" />
-    <state width="1921" height="280" key="GridCell.Tab.0.left" timestamp="1604937058898">
+    <state width="1921" height="280" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604941042075" />
+    <state width="1921" height="280" key="GridCell.Tab.0.left" timestamp="1604941042075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604937058898" />
-    <state width="1921" height="280" key="GridCell.Tab.0.right" timestamp="1604937058898">
+    <state width="1921" height="280" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604941042075" />
+    <state width="1921" height="280" key="GridCell.Tab.0.right" timestamp="1604941042075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604937058898" />
+    <state width="1921" height="280" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604941042075" />
     <state width="1921" height="367" key="GridCell.Tab.1.bottom" timestamp="1604932379072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
