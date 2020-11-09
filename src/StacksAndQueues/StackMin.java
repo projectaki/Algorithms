@@ -6,6 +6,7 @@ import java.util.NoSuchElementException;
  * Stack Min Implementation
  * Keeps a stack only adding if we have an element smaller or equals, and deleting if it equals to popped element
  * This provides constant time access to the min, if we remove the min we have the last smallest on the top of the stack
+ *
  * @param <T> Generic
  */
 public class StackMin<T> {
