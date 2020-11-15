@@ -6,10 +6,10 @@ import java.util.Queue;
 
 public class MinimalTree {
 
-    private static class Node {
-        private final String name;
-        private Node left;
-        private Node right;
+    protected static class Node {
+        protected final String name;
+        protected Node left;
+        protected Node right;
 
         public Node(String n) {
             name = n;
@@ -80,7 +80,7 @@ public class MinimalTree {
     }
 
     /**
-     * Funky print method to print tree (really whacky)
+     * Funky print method to print tree (really wacky)
      * @param root Root node
      * @param nodes Number of nodes
      */
@@ -127,8 +127,11 @@ public class MinimalTree {
         }
         Node root = buildBST(arr);
         BFSPrint(root, arr.length);
+        System.out.println();
         //System.out.println(findMiddle(1,2));
-
+        ListOfDepths l = new ListOfDepths();
+        l.makeLists(root);
+        l.printLists();
 
     }
 
