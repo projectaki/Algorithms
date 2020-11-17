@@ -30,9 +30,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../DataStructures" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.TreesAndGraphs.CheckBST">
+  <component name="RunManager" selected="Application.TreesAndGraphs.FindNext">
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -160,6 +160,11 @@
       <module name="Algorithms" />
       <method v="2" />
     </configuration>
+    <configuration name="TreesAndGraphs.FindNext" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="TreesAndGraphs.FindNext" />
+      <module name="Algorithms" />
+      <method v="2" />
+    </configuration>
     <configuration name="TreesAndGraphs.ListOfDepths" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="TreesAndGraphs.ListOfDepths" />
       <module name="Algorithms" />
@@ -181,7 +186,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -217,8 +222,9 @@
       <item itemvalue="Application.UniqueCharactersInString" />
       <item itemvalue="Application.TreesAndGraphs.ListOfDepths" />
       <item itemvalue="Application.TreesAndGraphs.CheckBalanced" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.TreesAndGraphs.CheckBST" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.TreesAndGraphs.FindNext" />
     </list>
     <recent_temporary>
       <list>
@@ -239,22 +245,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1604932839131" />
-    <state width="1921" height="280" key="GridCell.Tab.0.bottom" timestamp="1605526391760">
+    <state width="1921" height="280" key="GridCell.Tab.0.bottom" timestamp="1605640007756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605526391760" />
-    <state width="1921" height="280" key="GridCell.Tab.0.center" timestamp="1605526391760">
+    <state width="1921" height="280" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605640007756" />
+    <state width="1921" height="280" key="GridCell.Tab.0.center" timestamp="1605640007756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605526391760" />
-    <state width="1921" height="280" key="GridCell.Tab.0.left" timestamp="1605526391760">
+    <state width="1921" height="280" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605640007756" />
+    <state width="1921" height="280" key="GridCell.Tab.0.left" timestamp="1605640007756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605526391760" />
-    <state width="1921" height="280" key="GridCell.Tab.0.right" timestamp="1605526391760">
+    <state width="1921" height="280" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605640007756" />
+    <state width="1921" height="280" key="GridCell.Tab.0.right" timestamp="1605640007756">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="280" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605526391760" />
+    <state width="1921" height="280" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1605640007756" />
     <state width="1921" height="367" key="GridCell.Tab.1.bottom" timestamp="1605468336494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
