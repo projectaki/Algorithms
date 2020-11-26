@@ -52,8 +52,9 @@ public class BSTSequence {
 
     public static void main(String[] args) {
 
+        Node six = new Node(6, null, null);
         Node one = new Node(1, null, null);
-        Node five = new Node(5, null, null);
+        Node five = new Node(5, null, six);
         Node two = new Node(2, one, null);
         Node four = new Node(4, null, five);
         Node three = new Node(3, two, four);
