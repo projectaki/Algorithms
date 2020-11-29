@@ -41,8 +41,7 @@ public class PathsWithSum {
     public static int findPaths(Node x, ArrayList<Integer> paths, int given) {
         // pathsFound is the number of paths that added to given number at that level
         int pathsFound = 0;
-        int size = paths.size();
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < paths.size(); i++) {
             int newVal = paths.get(i) + x.value;
             paths.set(i, newVal);
             if(newVal == given) pathsFound += 1;
@@ -54,9 +53,9 @@ public class PathsWithSum {
         int passedUpPaths = 0;
         if(x.left != null) {
             passedUpPaths += findPaths(x.left, paths, given);
-            if (!paths.isEmpty()) paths.remove(paths.size() - 1);
-            size = paths.size();
-            for (int i = 0; i < size; i++) {
+            // backtracking
+            paths.remove(paths.size() - 1);
+            for (int i = 0; i < paths.size(); i++) {
                 int newVal = paths.get(i) - x.left.value;
                 paths.set(i, newVal);
             }
@@ -64,9 +63,8 @@ public class PathsWithSum {
 
         if(x.right != null) {
             passedUpPaths += findPaths(x.right, paths, given);
-            if (!paths.isEmpty()) paths.remove(paths.size() - 1);
-            size = paths.size();
-            for (int i = 0; i < size; i++) {
+            paths.remove(paths.size() - 1);
+            for (int i = 0; i < paths.size(); i++) {
                 int newVal = paths.get(i) - x.right.value;
                 paths.set(i, newVal);
             }
@@ -81,7 +79,7 @@ public class PathsWithSum {
         Node one = new Node(2, null, null);
         Node two = new Node(1, one, null);
         Node three = new Node(3, null, null);
-        Node four = new Node(11, null, null);
+        Node four = new Node(10, null, null);
         Node five = new Node(1, two, three);
         Node six = new Node(-5, null, four);
         Node root = new Node(1, five, six);
