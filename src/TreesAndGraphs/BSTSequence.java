@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * This implementation prints all of the arrays that would result in a 1 b1 1 add to the given BST
+ * This implementation prints all of the arrays that would result in a "1 by 1" add to the given BST
  */
 public class BSTSequence {
 
@@ -25,12 +25,22 @@ public class BSTSequence {
         }
     }
 
+    /**
+     * Prints all of the arrays
+     * @param root The root of the tree
+     */
     public static void printPerm(Node root) {
         HashMap<Integer, Node> newOptions = new HashMap<>();
         ArrayList<Integer> arraySoFar = new ArrayList<>();
         printPerm(root, newOptions, arraySoFar);
     }
 
+    /**
+     * Adds all the possible next nodes at a certain node, and then recursively repeats
+     * @param x Current Node
+     * @param newOptions HashMap for currently possible options
+     * @param arraySoFar The array which we have so far for printing at the end of the path
+     */
     public static void printPerm(Node x, HashMap<Integer, Node> newOptions, ArrayList<Integer> arraySoFar) {
         HashMap<Integer, Node> temp = new HashMap<>(newOptions);
         if(x.left != null) temp.put(x.left.value, x.left);

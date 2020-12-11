@@ -32,37 +32,37 @@ public class RouteBetweenNodes {
     // Implement a Bidirectional search
 
     public static void main(String[] args) {
-        // setup test graph
-        Graph graph = new Graph();
-        Graph.Node a = new Graph.Node();
-        Graph.Node b = new Graph.Node();
-        Graph.Node c = new Graph.Node();
-        Graph.Node d = new Graph.Node();
-        Graph.Node e = new Graph.Node();
-        Graph.Node f = new Graph.Node();
-
-        a.name = "a";
-        a.adjacent[0] = b;
-
-        b.name = "b";
-        b.adjacent[0] = c;
-
-        c.name = "c";
-        c.adjacent[0] = e;
-        c.adjacent[1] = d;
-
-        e.name = "e";
-        d.name = "d";
-        f.name = "f";
-
-        graph.nodes[0] = a;
-        graph.nodes[1] = b;
-        graph.nodes[2] = c;
-        graph.nodes[3] = d;
-        graph.nodes[4] = e;
-        graph.nodes[5] = f;
-
-        // check isPAth
-        System.out.println(isPath(graph.nodes[0], graph.nodes[5]));
+////        // setup test graph
+//////        Graph graph = new Graph();
+//////        Graph.Node a = new Graph.Node();
+//////        Graph.Node b = new Graph.Node();
+//////        Graph.Node c = new Graph.Node();
+//////        Graph.Node d = new Graph.Node();
+//////        Graph.Node e = new Graph.Node();
+//////        Graph.Node f = new Graph.Node();
+////
+////        a.name = "a";
+////        a.adjacent[0] = b;
+////
+////        b.name = "b";
+////        b.adjacent[0] = c;
+////
+////        c.name = "c";
+////        c.adjacent[0] = e;
+////        c.adjacent[1] = d;
+////
+////        e.name = "e";
+////        d.name = "d";
+////        f.name = "f";
+////
+////        graph.nodes[0] = a;
+////        graph.nodes[1] = b;
+////        graph.nodes[2] = c;
+////        graph.nodes[3] = d;
+////        graph.nodes[4] = e;
+////        graph.nodes[5] = f;
+//
+//        // check isPAth
+//        System.out.println(isPath(graph.nodes[0], graph.nodes[5]));
     }
 }
