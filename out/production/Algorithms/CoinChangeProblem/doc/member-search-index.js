@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"CoinChangeProblem","c":"CoinChangeMinCoins","l":"CoinChangeMinCoins()","url":"%3Cinit%3E()"},{"p":"CoinChangeProblem","c":"CoinChangeMinCoins","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"CoinChangeProblem","c":"CoinChangeMinCoins","l":"minCoinsDynamic(int[], int)","url":"minCoinsDynamic(int[],int)"}]
