@@ -38,12 +38,12 @@ public class MergeSort {
      */
     public static void mergeArrays(int[] array, int[] auxiliary, int left, int right) {
 
-        int rightIndex =  (left + right)/2 + 1;
+        int rightIndex = (right + left)/2 + 1;
         int leftIndex = left;
         int auxIndex = left;
 
         // copy the bigger element from the array to aux
-        while (leftIndex <= (left + right)/2 && rightIndex <= right) {
+        while (leftIndex <= (right + left)/2 && rightIndex <= right) {
             if (array[leftIndex] <= array[rightIndex]) {
                 auxiliary[auxIndex++] = array[leftIndex++];
             }
@@ -53,15 +53,15 @@ public class MergeSort {
         }
 
         // when one of them runs out of elements, copy the rest from the other to aux
-        while (leftIndex <= (left + right)/2) {
+        while (leftIndex <= (right + left)/2 ) {
             auxiliary[auxIndex++] = array[leftIndex++];
         }
-        while (rightIndex <= right) {
+        while (rightIndex <= right ) {
             auxiliary[auxIndex++] = array[rightIndex++];
         }
 
         //from aux copy elements to original array
-        for (int i = 0; i < (right - left) + 1; i++) {
+        for (int i = left; i < left + (right - left) + 1; i++) {
             array[i] = auxiliary[i];
         }
     }
@@ -74,7 +74,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {3,2,1,5,7,6,10};
+        int[] arr = {98, 27, 314, 377, 127, 68, 397, 221};
         mergesort(arr);
         System.out.println(Arrays.toString(arr));
 
