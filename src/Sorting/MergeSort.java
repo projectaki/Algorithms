@@ -74,7 +74,7 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        int[] arr = {98, 27, 314, 377, 127, 68, 397, 221};
+        int[] arr = {212, 325, 371, 43, 82, 58, 202, 225};
         mergesort(arr);
         System.out.println(Arrays.toString(arr));
 
