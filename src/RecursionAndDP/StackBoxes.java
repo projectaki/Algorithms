@@ -31,19 +31,23 @@ public class StackBoxes {
     public static int stackBoxes(ArrayList<Box> boxes) {
         Collections.sort(boxes);
         Box b = new Box(0,0,0);
-        return stackBoxes(boxes, 0, b);
+        int[] cache = new int[boxes.size()];
+        return stackBoxes(boxes, 0, b, cache);
     }
 
-    public static int stackBoxes(ArrayList<Box> boxes, int startIndex, Box prev) {
+    public static int stackBoxes(ArrayList<Box> boxes, int startIndex, Box prev, int[] cache) {
         int boxHeight = prev.height;
         int max = 0;
         for (int i = startIndex; i < boxes.size(); i++) {
-
+            int height;
             if(canStack(prev, boxes.get(i))) {
-                int height = stackBoxes(boxes, i + 1, boxes.get(i));
+                if (cache[i] != 0) height = cache[i];
+                else height = stackBoxes(boxes, i + 1, boxes.get(i), cache);
                 max = Math.max(max, height);
+                cache[i] = height;
             }
         }
+
         return boxHeight + max;
     }
 
@@ -55,15 +59,15 @@ public class StackBoxes {
         Box box1 = new Box(5,5,5);
         Box box2 = new Box(4,5,5);
         Box box3 = new Box(3,3,3);
-        Box box4 = new Box(10,10,2);
-        Box box5 = new Box(9,9,6);
+//        Box box4 = new Box(10,10,2);
+//        Box box5 = new Box(9,9,1);
 
         ArrayList<Box> boxes = new ArrayList<>();
         boxes.add(box1);
         boxes.add(box2);
         boxes.add(box3);
-        boxes.add(box4);
-        boxes.add(box5);
+//        boxes.add(box4);
+//        boxes.add(box5);
 
         System.out.println(stackBoxes(boxes));
     }
